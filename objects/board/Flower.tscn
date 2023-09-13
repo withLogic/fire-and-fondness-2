@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/flower.png" type="Texture" id=1]
+[ext_resource path="res://objects/board/Flower.gd" type="Script" id=2]
+
+[node name="Flower" type="Node2D" groups=[
+"board_object",
+"flower",
+]]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+region_rect = Rect2( 32, 0, 16, 16 )
